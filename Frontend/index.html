@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Search - Explore the finite</title>
+ 
+    
+    <!-- Google Fonts: Outfit for a modern, tech feel -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-glow"></div>
+    <div class="noise-overlay"></div>
+
+    <main id="app">
+        <section class="hero-section">
+            <div class="logo-container">
+                <h1 class="logo-text">Books</h1>
+                <div class="logo-dot"></div>
+            </div>
+            
+            <div class="search-container">
+                <div class="search-bar-wrapper">
+                    <i class="fa-solid fa-search search-icon"></i>
+                    <input type="text" id="search-input" placeholder="Search the library..." autocomplete="off">
+                    <button id="search-btn" class="search-btn">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                    <div class="search-glow"></div>
+                </div>
+                
+                <!-- Suggestions Dropdown (Hidden by default) -->
+                <div class="suggestions-box hidden" id="suggestions-box">
+                    <div class="suggestion-item">
+                        <i class="fa-regular fa-clock"></i>
+                        <span>Recent: <strong>Artificial Intelligence</strong></span>
+                    </div>
+                    <div class="suggestion-item">
+                        <i class="fa-solid fa-arrow-trend-up"></i>
+                        <span>Trending: <strong>SpaceX Starship</strong></span>
+                     </div>
+                    <div class="suggestion-item">
+                        <i class="fa-solid fa-arrow-trend-up"></i>
+                        <span>Trending: <strong>Web3 Design</strong></span>
+                    </div>
+                </div>
+            </div>
+
+ 
+        </section>
+
+        <!-- Container for results (Dynamically populated) -->
+        <section id="results-section" class="results-section hidden">
+            <div class="results-header">
+                <p class="result-stats">About 1,240,000 results (0.42 seconds)</p>
+            </div>
+            <div class="results-grid" id="results-grid">
+                <!-- Results will be injected here -->
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
