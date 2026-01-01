@@ -4,7 +4,7 @@ class Dbhelper():
     def __init__(self):
         try:
             self.conn = mysql.connector.connect(host="localhost", user="root", password="" ,database="search_engine")
-            self.mycursor =self.conn.cursor()
+            self.mycursor =self.conn.cursor(dictionary=True)
         except:
             print("Couldn't Connect to the Database")
             sys.exit(500)
@@ -13,10 +13,10 @@ class Dbhelper():
  
 
     def fetch(self, name):
-        self.mycursor.execute
 
-    def fetch(self, link):
-        pass
+        query = "SELECT * FROM book WHERE name LIKE %s"
+        pattern = f"%{name}%"
 
-    def fetch(self, id):
-        pass
+        self.mycursor.execute(query, (pattern,))
+        result = self.mycursor.fetchall()
+        return result
