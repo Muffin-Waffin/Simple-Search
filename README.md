@@ -1,4 +1,5 @@
-"# Simple-Search" 
+Simple-Search 
+
 This is a personal project 
 
 I was always fasinated how google works and i wanted to see that for myself and whats a better way than creating one by yourself
@@ -13,9 +14,17 @@ i cant always keep this project live on the internet or can i?
 To run this project locally:
 
 • clone this repo
+
 • upload the book.csv to the database in a table called book
+
 • go to backend and run the app.py 
+
 • go to front end and open the html file in browser
+
+
+
+
+
 
 
 Future Plans:
