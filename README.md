@@ -1,4 +1,5 @@
-"# Simple-Search" 
+Simple-Search 
+
 This is a personal project 
 
 
@@ -16,15 +17,16 @@ books.toscrape.com Check them out Great website to practice webscraping
 
 i cant always keep this project live on the internet or can i?
 
-
 To run this project locally:
 
 
 • clone this repo
-• upload the book.csv to the database in a table called book
-• go to backend and run the app.py 
-• go to front end and open the html file in browser
 
+• upload the book.csv to the database in a table called book 
+
+• go to backend and run the app.py 
+
+• go to front end and open the html file in browser
 
 
 Future Plans:
