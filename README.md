@@ -9,13 +9,13 @@ So I did it.
 This is a search engine built upon the website 
 books.toscrape.com Check them out Great website to practice webscraping 
 
-i cant always keep this project live on the internet or can i?
+i cant always keep this project live on the internet or can i? ( Hey Vsauce, Michael Here )
 
 To run this project locally:
 
 • clone this repo
 
-• upload the book.csv to the database in a table called book
+• upload the book.csv to the database in a table called book 
 
 • go to backend and run the app.py 
 
