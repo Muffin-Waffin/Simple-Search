@@ -1,3 +1,4 @@
 Flask==3.1.2
 flask_cors==6.0.2
-mysql_connector_repackaged==0.3.1
+pymysql==1.1.2
+python-dotenv==1.2.1

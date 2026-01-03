@@ -1,4 +1,4 @@
-import mysql.connector
+import pymysql
 import sys
 import os
 from dotenv import load_dotenv
@@ -13,7 +13,7 @@ db_database = os.getenv('DB_DATABASE')
 class Dbhelper():
     def __init__(self):
         try:
-            self.conn = mysql.connector.connect(host=db_host, user=db_username, password=db_password,database=db_database, port= 3306)
+            self.conn = pymysql.connector.connect(host=db_host, user=db_username, password=db_password,database=db_database, port= 3306)
             self.mycursor =self.conn.cursor(dictionary=True)
         except Exception as e:
             print(e)
