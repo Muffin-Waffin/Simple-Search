@@ -15,8 +15,13 @@ def home():
 @app.route("/search")
 def search():
     name = request.args.get("q", "")
-    res = db.fetch(name)
+    page = int(request.args.get("page", 1))
+    limit = int(request.args.get("limit", 10))
+    offset = (page - 1) * limit
+    res = db.fetch(name, offset, limit)
     return jsonify(res)
 
+if __name__ == '__main__':
+    app.run()
 
 
